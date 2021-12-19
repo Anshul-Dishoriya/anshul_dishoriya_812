@@ -107,7 +107,7 @@ def scrap_details(url,who, product_type , pages):
 #Driver Code 
 if __name__ = '__main__':
     for who , product_type , pages in tqdm(search_item):
-        url = f'https://www.flipkart.com/search?q={who}+sport+{product_type}&otracker=search&otracker1=search&marketplace=FLIPKART&as-               show=on&as=off'
+        url = f'https://www.flipkart.com/search?q={who}+sport+{product_type}&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off'
     #     print(url)
         scrap_details(url , who , product_type , pages )
     else:
